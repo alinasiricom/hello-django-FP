@@ -1,3 +1,7 @@
+#custom files
+password.txt
+*.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
