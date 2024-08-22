@@ -3,12 +3,12 @@
 {% block content %}
 
 
-<div class="page-banner-area bg-black bg-img" data-background="./assets/images/banner-bg-shape.png">
+<div class="page-banner-area bg-black bg-img" data-background="{% static 'images/banner-bg-shape.png' %}">
     <div class="container mw-1680">
         <div class="page-banner-content">
             <h2>وبلاگ</h2>
             <ul class="ps-0 mb-0 list-unstyled justify-content-center page-breadcrumb d-flex flex-wrap gap-4">
-                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="{% url 'aapp:index' %}">صفحه اصلی</a></li>
                 <li><span class="active">وبلاگ</span></li>
             </ul>
         </div>
@@ -19,116 +19,116 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-1.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-1.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">یک روز در قلمروهای مد پنهان مد</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">یک روز در قلمروهای مد پنهان مد</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-2.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-2.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">وبلاگ عالی یک عکاس عروسی</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">وبلاگ عالی یک عکاس عروسی</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-5.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-5.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">تسلط بر ذهن آگاهی: راهنمای بهزیستی روزانه</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">تسلط بر ذهن آگاهی: راهنمای بهزیستی روزانه</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-6.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-6.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">ظهور مد پایدار به سبک سازگار با محیط زیست</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">ظهور مد پایدار به سبک سازگار با محیط زیست</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-7.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-7.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">نوآوری های فناوری در سفر: بازتعریف روشی که کاوش می کنیم</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">نوآوری های فناوری در سفر: بازتعریف روشی که کاوش می کنیم</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-8.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-8.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">هنر داستان سرایی: ساختن روایت های متقاعد کننده</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">هنر داستان سرایی: ساختن روایت های متقاعد کننده</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-9.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-9.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">پیمایش از راه دور: نکاتی برای بهره وری</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">پیمایش از راه دور: نکاتی برای بهره وری</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-10.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-10.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">فراتر از بشقاب: کاوش در آشپزی در سراسر جهان</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">فراتر از بشقاب: کاوش در آشپزی در سراسر جهان</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item style-two">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="assets/images/blog-11.jpg"
+                    <a href="{% url 'blog:single' %}" class="d-block blog-img"><img src="{% static 'images/blog-11.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">توانمندسازی کارآفرینان: بنیانگذار موفق بینش</a></h3>
+                    <h3><a href="{% url 'blog:single' %}">توانمندسازی کارآفرینان: بنیانگذار موفق بینش</a></h3>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="pagination">
-                    <a href="blog.html" class="next page-count hover-style">
+                    <a href="{% url 'blog:home' %}" class="next page-count hover-style">
                         <div class="inner-border"><i class="icofont-simple-left"></i></div>
-                    </a><a href="blog.html" class="page-count current hover-style" aria-current="page">
+                    </a><a href="{% url 'blog:home' %}" class="page-count current hover-style" aria-current="page">
                         <div class="inner-border">1</div>
-                    </a><a href="blog.html" class="page-count hover-style">
+                    </a><a href="{% url 'blog:home' %}" class="page-count hover-style">
                         <div class="inner-border">2</div>
-                    </a><a href="blog.html" class="page-count hover-style">
+                    </a><a href="{% url 'blog:home' %}" class="page-count hover-style">
                         <div class="inner-border">3</div>
-                    </a><a href="blog.html" class="page-count hover-style">
+                    </a><a href="{% url 'blog:home' %}" class="page-count hover-style">
                         <div class="inner-border">4</div>
-                    </a><a href="blog.html" class="next page-count hover-style">
+                    </a><a href="{% url 'blog:home' %}" class="next page-count hover-style">
                         <div class="inner-border"><i class="icofont-simple-right"></i></div>
                     </a>
                 </div>
@@ -156,7 +156,7 @@
                             طیف گسترده‌ای از خدمات را ارائه می‌دهد. از مشاوره استراتژیک و تحول دیجیتال گرفته تا
                             استراتژی های بازاریابی و مشاوره مالی...</p>
                         <div class="d-flex align-items-center info">
-                            <div class="flex-shrink-0"><img src="assets/images/testimonial-3.png" class="rounded-circle"
+                            <div class="flex-shrink-0"><img src="{% static 'images/testimonial-3.png' %}" class="rounded-circle"
                                     alt="testimonial"></div>
                             <div class="flex-grow-1 ms-3">
                                 <h3>برندی رو</h3>
@@ -176,7 +176,7 @@
                             طیف گسترده‌ای از خدمات را ارائه می‌دهد. از مشاوره استراتژیک و تحول دیجیتال گرفته تا
                             استراتژی های بازاریابی و مشاوره مالی...</p>
                         <div class="d-flex align-items-center info">
-                            <div class="flex-shrink-0"><img src="assets/images/testimonial-3.png" class="rounded-circle"
+                            <div class="flex-shrink-0"><img src="{% static 'images/testimonial-3.png' %}" class="rounded-circle"
                                     alt="testimonial"></div>
                             <div class="flex-grow-1 ms-3">
                                 <h3>برندی رو</h3>
@@ -187,7 +187,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="testimonial-img-three mt-4 mt-lg-0"><img src="assets/images/testimonial-6.jpg"
+                <div class="testimonial-img-three mt-4 mt-lg-0"><img src="{% static 'images/testimonial-6.jpg' %}"
                         alt="testimonial"></div>
             </div>
         </div>

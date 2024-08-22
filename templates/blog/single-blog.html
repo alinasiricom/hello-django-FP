@@ -3,12 +3,12 @@
 {% block content %}
 
 
-<div class="page-banner-area bg-black bg-img" data-background="./assets/images/banner-bg-shape.png">
+<div class="page-banner-area bg-black bg-img" data-background="{% static 'images/banner-bg-shape.png' %}">
     <div class="container mw-1680">
         <div class="page-banner-content">
             <h2>جزئیات وبلاگ</h2>
             <ul class="ps-0 mb-0 list-unstyled justify-content-center page-breadcrumb d-flex flex-wrap gap-4">
-                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="{% url 'aapp:index' %}">صفحه اصلی</a></li>
                 <li><span class="active">جزئیات وبلاگ</span></li>
             </ul>
         </div>
@@ -17,7 +17,7 @@
 <div class="blog-details-area pt-100">
     <div class="container">
         <div class="blog-details-content">
-            <div class="blog-details-img"><img src="assets/images/blog-details-img.jpg" alt="blog-details-img">
+            <div class="blog-details-img"><img src="{% static 'images/blog-details-img.jpg' %}" alt="blog-details-img">
             </div>
             <h2>یک روز در قلمروهای پنهان مد، نگاهی از پشت صحنه به فرآیندهای خلاقانه</h2>
             <p><span>W</span>elcome readers to an exclusive journey behind the scenes of the fashion world. Explore
@@ -34,7 +34,7 @@
                 لباس‌های نفیس تبدیل می‌شوند. هیجان و هرج و مرج تمرین نمایش مد را تجربه کنید.</p>
             <div class="mb-60"></div>
             <blockquote>
-                <img src="assets/images/quote.svg" alt="quat">
+                <img src="{% static 'images/quote.svg' %}" alt="quat">
                 <p>نقش فناوری در صنعت مد را بررسی کنید. از اتصالات مجازی گرفته تا تجزیه و تحلیل روند مبتنی بر هوش
                     مصنوعی، کشف کنید که چگونه نوآوری های دیجیتال در حال تغییر شکل دادن به شیوه ایجاد و مصرف مد
                     هستند.</p>
@@ -43,10 +43,10 @@
             <div class="mb-60"></div>
             <div class="row">
                 <div class="col-g-6 col-sm-6">
-                    <div class="blog-img mb-4 mb-sm-0"><img src="assets/images/blog-12.jpg" alt="blog"></div>
+                    <div class="blog-img mb-4 mb-sm-0"><img src="{% static 'images/blog-12.jpg' %}" alt="blog"></div>
                 </div>
                 <div class="col-g-6 col-sm-6">
-                    <div class="blog-img"><img src="assets/images/blog-13.jpg" alt="blog"></div>
+                    <div class="blog-img"><img src="{% static 'images/blog-13.jpg' %}" alt="blog"></div>
                 </div>
             </div>
             <div class="mb-60"></div>
@@ -66,10 +66,10 @@
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 tags-share">
                 <ul class="ps-0 mb-0 list-unstyled d-flex flex-wrap gap-2 tags-list align-items-center">
                     <li><span>برچسب ها:</span></li>
-                    <li><a href="blog.html">طرح</a></li>
-                    <li><a href="blog.html">توسعه</a></li>
-                    <li><a href="blog.html">برنامه ریزی</a></li>
-                    <li><a href="blog.html">بازار یابی</a></li>
+                    <li><a href="{% url 'blog:home' %}">طرح</a></li>
+                    <li><a href="{% url 'blog:home' %}">توسعه</a></li>
+                    <li><a href="{% url 'blog:home' %}">برنامه ریزی</a></li>
+                    <li><a href="{% url 'blog:home' %}">بازار یابی</a></li>
                 </ul>
                 <ul class="ps-0 mb-0 list-unstyled d-flex social-list align-items-center gap-3">
                     <li><span>اشتراک گذاری:</span></li>

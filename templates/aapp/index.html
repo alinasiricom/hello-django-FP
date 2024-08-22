@@ -17,8 +17,8 @@
                     <p>به Stir خوش آمدید، جایی که نوآوری با استراتژی و برتری استاندارد ما است. آژانس های تجاری به
                         عنوان یک آژانس تجاری برتر، نهادهای تخصصی هستند ...</p>
                     <div class="d-flex align-items-center">
-                        <a href="blog.html" class="main-btn style-two"><span>بیشتر بدانید</span><i
-                                class="fa-regular fa-arrow-left"></i></a><a href="about-us.html"
+                        <a href="{% url 'blog:home' %}" class="main-btn style-two"><span>بیشتر بدانید</span><i
+                                class="fa-regular fa-arrow-left"></i></a><a href="{% url 'aapp:about' %}"
                             class="circle-btn-two position-relative">
                             <div class="btn-info">
                                 <span>درباره ما</span><i class="fa-solid fa-arrow-up-left"></i>
@@ -55,7 +55,7 @@
                     <p>خواه افزایش دید بازار، بهبود کارایی عملیاتی یا اجرای فناوری‌های پیشرفته باشد، آژانس ما طیف
                         گسترده‌ای از خدمات را از مشاوره استراتژیک ارائه می‌کند.</p>
                     <div class="d-flex align-items-center position-relative mt-40">
-                        <a href="about-us.html" class="main-btn style-two">بیشتر پیدا کن<i
+                        <a href="{% url 'aapp:about' %}" class="main-btn style-two">بیشتر پیدا کن<i
                                 class="fa-regular fa-arrow-left"></i></a><a
                             href="https://youtu.be/bk7McNUjWgw?si=m_dHkilr3ALPzNl9"
                             class="video-btn ms-3 ms-lg-5 popup-youtube"><i
@@ -77,47 +77,47 @@
             <div class="services-slide owl-carousel owl-theme">
                 <div class="services-single-item-two">
                     <span class="borders"></span>
-                    <h3><a href="service-details.html">مشاوره استراتژیک</a></h3>
+                    <h3><a href="#">مشاوره استراتژیک</a></h3>
                     <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از تحلیل بازار و
                         استراتژی های رشد ...</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <img src="{% static 'images/services-icon-5.svg' %}" alt="services-icon"><a
-                            href="service-details.html" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
+                            href="#" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
                     </div>
                 </div>
                 <div class="services-single-item-two">
                     <span class="borders"></span>
-                    <h3><a href="service-details.html">تحول دیجیتال</a></h3>
+                    <h3><a href="#">تحول دیجیتال</a></h3>
                     <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از تحلیل بازار و
                         استراتژی های رشد ...</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <img src="{% static 'images/services-icon-6.svg' %}" alt="services-icon"><a
-                            href="service-details.html" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
+                            href="#" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
                     </div>
                 </div>
                 <div class="services-single-item-two">
                     <span class="borders"></span>
-                    <h3><a href="service-details.html">بازاریابی و برندسازی</a></h3>
+                    <h3><a href="#">بازاریابی و برندسازی</a></h3>
                     <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از تحلیل بازار و
                         استراتژی های رشد ...</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <img src="{% static 'images/services-icon-7.svg' %}" alt="services-icon"><a
-                            href="service-details.html" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
+                            href="#" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
                     </div>
                 </div>
                 <div class="services-single-item-two">
                     <span class="borders"></span>
-                    <h3><a href="service-details.html">خدمات مشاوره مالی</a></h3>
+                    <h3><a href="#">خدمات مشاوره مالی</a></h3>
                     <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از تحلیل بازار و
                         استراتژی های رشد ...</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <img src="{% static 'images/services-icon-8.svg' %}" alt="services-icon"><a
-                            href="service-details.html" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
+                            href="#" class="read-btn"><i class="fa-regular fa-arrow-left"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-lg-4 pt-lg-2"><a href="services.html"
+        <div class="text-center mt-lg-4 pt-lg-2"><a href="#"
                 class="main-btn border-btn d-inline-block"><span>همه خدمات را مرور کنید</span><i
                     class="fa-regular fa-arrow-left"></i></a></div>
     </div>
@@ -156,49 +156,49 @@
         </div>
         <div class="cases-slide owl-carousel owl-theme">
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">بازاریابی</a>
-                <h3><a href="case-study.html">توسعه کسب و کار و مشارکت</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-1.jpg' %}"
+                <a href="#" class="tag">بازاریابی</a>
+                <h3><a href="#">توسعه کسب و کار و مشارکت</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-1.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
             </div>
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">طراحی وب سایت</a>
-                <h3><a href="case-study.html">مدیریت بحران و کاهش ریسک</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-2.jpg' %}"
+                <a href="#" class="tag">طراحی وب سایت</a>
+                <h3><a href="#">مدیریت بحران و کاهش ریسک</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-2.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
             </div>
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">مشاوره</a>
-                <h3><a href="case-study.html">طراحی خلاقانه و تولید محتوا</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-3.jpg' %}"
+                <a href="#" class="tag">مشاوره</a>
+                <h3><a href="#">طراحی خلاقانه و تولید محتوا</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-3.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
             </div>
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">بازار یابی</a>
-                <h3><a href="case-study.html">توسعه کسب و کار و مشارکت</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-1.jpg' %}"
+                <a href="#" class="tag">بازار یابی</a>
+                <h3><a href="#">توسعه کسب و کار و مشارکت</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-1.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
             </div>
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">طراحی وب سایت</a>
-                <h3><a href="case-study.html">مدیریت بحران و کاهش ریسک</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-2.jpg' %}"
+                <a href="#" class="tag">طراحی وب سایت</a>
+                <h3><a href="#">مدیریت بحران و کاهش ریسک</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-2.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
             </div>
             <div class="recent-cases-single-item">
-                <a href="case-study.html" class="tag">مشاوره</a>
-                <h3><a href="case-study.html">طراحی خلاقانه و تولید محتوا</a></h3>
-                <a href="case-study.html" class="cases-img"><img src="{% static 'images/cases-3.jpg' %}"
+                <a href="#" class="tag">مشاوره</a>
+                <h3><a href="#">طراحی خلاقانه و تولید محتوا</a></h3>
+                <a href="#" class="cases-img"><img src="{% static 'images/cases-3.jpg' %}"
                         alt="cases"></a>
                 <p>مشاوران متخصص ما دستگاه های متناسب با هدف صنایع دستی شما را ارائه می دهند. از استراتژی های تحلیل
                     بازار ...</p>
@@ -217,7 +217,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="get-in-touch-btn text-center text-lg-end mt-4 mt-lg-0"><a
-                        href="contact-us.html"><span>بیایید صحبت کنیم</span><i class="fa-regular fa-arrow-left"></i></a>
+                        href="{% url 'aapp:contact' %}"><span>بیایید صحبت کنیم</span><i class="fa-regular fa-arrow-left"></i></a>
                 </div>
             </div>
         </div>
@@ -384,30 +384,30 @@
                     <h2>اخبار و بینش های اخیر ما</h2>
                     <p>رضایت مشتری در قلب هر کاری است که انجام می دهیم. ما موفقیت خود را با موفقیت مشتریانمان می
                         سنجیم. بنابراین، ما با دوام ...</p>
-                    <a href="blog.html" class="main-btn border-btn">مرور همه وبلاگ<i
+                    <a href="{% url 'blog:home' %}" class="main-btn border-btn">مرور همه وبلاگ<i
                             class="fa-regular fa-arrow-left"></i></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="{% static 'images/blog-1.jpg' %}"
+                    <a href="single-{% url 'blog:home' %}" class="d-block blog-img"><img src="{% static 'images/blog-1.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">یک روز در قلمروهای پنهان مد</a></h3>
+                    <h3><a href="single-{% url 'blog:home' %}">یک روز در قلمروهای پنهان مد</a></h3>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
                 <div class="blog-single-item">
-                    <a href="single-blog.html" class="d-block blog-img"><img src="{% static 'images/blog-2.jpg' %}"
+                    <a href="single-{% url 'blog:home' %}" class="d-block blog-img"><img src="{% static 'images/blog-2.jpg' %}"
                             alt="blog"></a>
                     <ul class="ps-0 list-unstyled date">
                         <li><span>27 نوامبر 2023</span></li>
                         <li>3 Minutes Read</li>
                     </ul>
-                    <h3><a href="single-blog.html">وبلاگ عالی یک عکاس عروسی</a></h3>
+                    <h3><a href="single-{% url 'blog:home' %}">وبلاگ عالی یک عکاس عروسی</a></h3>
                 </div>
             </div>
         </div>
