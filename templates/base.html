@@ -27,17 +27,17 @@
     <div class="navbar-area style-two bg-color-0c0c1c py-0">
         <div class="main-nav">
             <div class="container mw-1680">
-                <nav class="navbar navbar-expand-md"><a class="navbar-brand" href="index.html"><img
+                <nav class="navbar navbar-expand-md"><a class="navbar-brand" href="{% url 'aapp:index' %}"><img
                             src="{% static 'images/white-logo-2.svg' %}" alt="logo"></a>
                     <div class="collapse navbar-collapse for-mobile-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a href="#" class="nav-link active">خانه</a></li>
-                            <li class="nav-item"><a href="about-us.html" class="nav-link">درباره ما</a></li>
-                            <li class="nav-item"><a href="contact-us.html" class="nav-link">تماس با ما</a></li>
-                            <li class="nav-item"><a href="blog.html" class="nav-link">وبلاگ</a></li>
+                            <li class="nav-item"><a href="{% url 'aapp:index' %}" class="nav-link">خانه</a></li>
+                            <li class="nav-item"><a href="{% url 'aapp:about' %}" class="nav-link">درباره ما</a></li>
+                            <li class="nav-item"><a href="{% url 'aapp:contact' %}" class="nav-link">تماس با ما</a></li>
+                            <li class="nav-item"><a href="{% url 'blog:home' %}" class="nav-link">وبلاگ</a></li>
                         </ul>
                         <div class="nav-right-options d-flex align-items-center">
-                            <a href="#" class="main-btn d-none d-lg-block"><span>ورود / ثبت نام</span></a>
+                            <a href="{% url 'account:login' %}" class="main-btn d-none d-lg-block"><span>ورود / ثبت نام</span></a>
                         </div>
                     </div>
                 </nav>
@@ -46,7 +46,7 @@
         <div class="mobile-nav">
             <div class="container">
                 <div class="mobile-menu">
-                    <div class="logo"><a href="index.html"><img src="{% static 'images/white-logo-2.svg' %}"
+                    <div class="logo"><a href="{% url 'aapp:index' %}"><img src="{% static 'images/white-logo-2.svg' %}"
                                 alt="logo"></a>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-xl-4" data-cues="slideInUp">
                     <div class="footer-single-item style-two">
-                        <a href="index.html" class="logo"><img src="{% static 'images/white-logo-2.svg' %}"
+                        <a href="{% url 'aapp:index' %}" class="logo"><img src="{% static 'images/white-logo-2.svg' %}"
                                 alt="white-logo"></a>
                         <p>در سفری به ما بپیوندید که در آن خلاقیت حد و مرزی نمی شناسد و نوآوری رشد می کند. امروز با
                             [Stir] تماس بگیرید و بیایید با هم همکاری کنیم تا چشم انداز شما را زنده کنیم.</p>
@@ -84,30 +84,6 @@
                 </div>
                 <div class="col-xl-8">
                     <div class="row" data-cues="slideInUp">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="footer-single-item style-two">
-                                <h3>خدمات ما</h3>
-                                <ul class="useful-link">
-                                    <li><a href="services.html">مشاوره استراتژیک</a></li>
-                                    <li><a href="services.html">بازاریابی دیجیتال</a></li>
-                                    <li><a href="services.html">توسعه برند</a></li>
-                                    <li><a href="services.html">مشاوره مالی</a></li>
-                                    <li><a href="services.html">راه حل های فناوری</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="footer-single-item style-two">
-                                <h3>خدمات ما</h3>
-                                <ul class="useful-link">
-                                    <li><a href="services.html">مشاوره استراتژیک</a></li>
-                                    <li><a href="services.html">بازاریابی دیجیتال</a></li>
-                                    <li><a href="services.html">توسعه برند</a></li>
-                                    <li><a href="services.html">مشاوره مالی</a></li>
-                                    <li><a href="services.html">راه حل های فناوری</a></li>
-                                </ul>
-                            </div>
-                        </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-single-item style-two">
                                 <h3>با ما تماس بگیرید</h3>
