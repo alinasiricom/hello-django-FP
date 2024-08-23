@@ -37,7 +37,8 @@
                             <li class="nav-item"><a href="{% url 'blog:home' %}" class="nav-link">وبلاگ</a></li>
                         </ul>
                         <div class="nav-right-options d-flex align-items-center">
-                            <a href="{% url 'account:login' %}" class="main-btn d-none d-lg-block"><span>ورود / ثبت نام</span></a>
+                            <a href="{% url 'account:login' %}" class="main-btn d-none d-lg-block">
+                                <span>ورود / ثبت نام</span></a>
                         </div>
                     </div>
                 </nav>
@@ -61,6 +62,7 @@
 
 
     <!-- footer -->
+    <hr style="border-width:2px">
     <div class="footer-area pt-100 pb-75">
         <div class="container">
             <div class="row">
@@ -71,8 +73,6 @@
                         <p>در سفری به ما بپیوندید که در آن خلاقیت حد و مرزی نمی شناسد و نوآوری رشد می کند. امروز با
                             [Stir] تماس بگیرید و بیایید با هم همکاری کنیم تا چشم انداز شما را زنده کنیم.</p>
                         <ul class="social-link ps-0 mb-0 list-unstyled">
-                            <li><a href="https://facebook.com/" target="_blank"><i
-                                        class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                             </li>
                             <li><a href="https://instagram.com/" target="_blank"><i
@@ -84,6 +84,18 @@
                 </div>
                 <div class="col-xl-8">
                     <div class="row" data-cues="slideInUp">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="footer-single-item style-two">
+                                <h3>عضویت در خبرنامه</h3>
+                                <form>
+                                    <input type="email" class="form-control" placeholder="ایمیل">
+                                    <button type="submit" class="main-btn border-btn">
+                                        <span> عضویت در خبرنامه </span><i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6"></div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-single-item style-two">
                                 <h3>با ما تماس بگیرید</h3>

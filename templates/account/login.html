@@ -29,7 +29,7 @@
                     <h3>وارد حساب کاربری خود شوید</h3>
                     <form>
                         <div class="form-group mb-4">
-                            <input type="email" class="form-control" placeholder="پست الکترونیک">
+                            <input type="email" class="form-control" placeholder="ایمیل">
                         </div>
                         <div class="form-group mb-4">
                             <div class="password-wrapper">
@@ -37,8 +37,10 @@
                                     class="fa fa-eye-slash password-toggle-icon" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="form-group mb-4"><button type="submit" class="main-btn">ورود</button></div>
-                        <a href="{% url 'account:signup' %}" class="mb-4">حساب ندارید؟ ثبت نام کنید</a>
+                        <div class="form-group mb-4">
+                            <button type="submit" class="main-btn">ورود</button>
+                        </div>حساب ندارید؟
+                        <a href="{% url 'account:signup' %}" class="mb-4">ثبت نام</a>
                     </form>
                 </div>
             </div>

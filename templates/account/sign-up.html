@@ -32,7 +32,7 @@
                             <input type="text" class="form-control" placeholder="نام کاربری">
                         </div>
                         <div class="form-group mb-4">
-                            <input type="email" class="form-control" placeholder="پست الکترونیک">
+                            <input type="email" class="form-control" placeholder="ایمیل">
                         </div>
                         <div class="form-group mb-4">
                             <div class="password-wrapper">
@@ -44,14 +44,13 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label
                                     class="form-check-label" for="flexCheckDefault">موافق با <a
-                                        href="{% url 'account:terms' %}">شرایط و
-                                        ضوابط</a> هستم.</label>
+                                        href="{% url 'account:terms' %}">شرایط سایت</a> هستم.</label>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <button type="submit" class="main-btn">ثبت نام</button>
-                        </div>
-                        <a href="{% url 'account:login' %}" class="mb-4">حساب کاربری دارید؟ وارد شوید.</a>
+                        </div>حساب کاربری دارید؟ 
+                        <a href="{% url 'account:login' %}" class="mb-4">ورود</a>
                     </form>
                 </div>
             </div>
