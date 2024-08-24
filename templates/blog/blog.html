@@ -34,5 +34,23 @@
     </div>
 </div>
 
+<hr>
+
+<div class="blog-details-area">
+    <div class="container">
+        <div class="blog-details-content">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 tags-share">
+                <ul class="ps-0 mb-0 list-unstyled d-flex flex-wrap gap-2 tags-list align-items-center">
+                    <li><span style="color: #fff;">برچسب ها:</span></li>
+                    {% for cat in cats %}
+                    <li><a href="{% url 'blog:category' cat=cat.name %}">
+                            {{cat.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

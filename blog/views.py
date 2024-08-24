@@ -6,7 +6,8 @@ from .models import *
 def home_view(request, cat=None):
     posts = Post.objects.filter(status=1, published_date__lte = timezone.now())
     if cat: posts = posts.filter(category__name = cat)
-    context = {'posts': posts}
+    cats = cats = Category.objects.all()
+    context = {'posts': posts, 'cats': cats}
     return render(request, 'blog/blog.html', context)
 
 

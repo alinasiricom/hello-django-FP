@@ -6,10 +6,11 @@
 <div class="page-banner-area bg-black bg-img" data-background="{% static 'images/banner-bg-shape.png' %}">
     <div class="container mw-1680">
         <div class="page-banner-content">
-            <h2>جزئیات وبلاگ</h2>
+            <h2>{{post.title}}</h2>
             <ul class="ps-0 mb-0 list-unstyled justify-content-center page-breadcrumb d-flex flex-wrap gap-4">
                 <li><a href="{% url 'aapp:index' %}">صفحه اصلی</a></li>
-                <li><span class="active">جزئیات وبلاگ</span></li>
+                <li><a href="{% url 'blog:home' %}">وبلاگ</a></li>
+                <li><span class="active">{{post.title}}</span></li>
             </ul>
         </div>
     </div>
@@ -25,10 +26,10 @@
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 tags-share">
                 <ul class="ps-0 mb-0 list-unstyled d-flex flex-wrap gap-2 tags-list align-items-center">
                     <li><span style="color: #fff;">برچسب ها:</span></li>
-                    <li><a href="{% url 'blog:home' %}">طرح</a></li>
-                    <li><a href="{% url 'blog:home' %}">توسعه</a></li>
-                    <li><a href="{% url 'blog:home' %}">برنامه ریزی</a></li>
-                    <li><a href="{% url 'blog:home' %}">بازاریابی</a></li>
+                    {% for cat in post.category.all %}
+                    <li><a href="{% url 'blog:category' cat=cat.name %}">
+                            {{cat.name}}</a></li>
+                    {% endfor %}
                 </ul>
                 <ul class="ps-0 mb-0 list-unstyled d-flex social-list align-items-center gap-3">
                     <li><span style="color: #fff;">اشتراک گذاری:</span></li>
@@ -47,7 +48,7 @@
                         {% if next_post != 'none' %}
                         <div class="thumb">
                             <a href="{% url 'blog:single' pid=next_post.id %}"><img class="img-fluid"
-                                style="max-width: 300px;" src="{{next_post.image.url}}" alt=""></a>
+                                    style="max-width: 300px;" src="{{next_post.image.url}}" alt=""></a>
                         </div>
                         <div class="arrow">
                             <a href="{% url 'blog:single' pid=next_post.id %}"><span
