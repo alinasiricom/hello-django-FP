@@ -38,10 +38,25 @@
                             <li class="nav-item"><a href="{% url 'aapp:contact' %}" class="nav-link">تماس با ما</a></li>
                             <li class="nav-item"><a href="{% url 'blog:home' %}" class="nav-link">وبلاگ</a></li>
                         </ul>
+                        {% if request.user.is_authenticated %}
+                        <div class="nav-right-options d-flex align-items-center">
+                            <p class="main-btn d-none d-lg-block">
+                                <span>وارد شده با {{request.user.username}}</span></p>
+                        </div>
+                        <div style="margin-right: 10px;" class="nav-right-options d-flex align-items-center">
+                            <a href="{% url 'account:logout' %}" class="main-btn d-none d-lg-block">
+                                <span>خروج</span></a>
+                        </div>
+                        {% else %}
                         <div class="nav-right-options d-flex align-items-center">
                             <a href="{% url 'account:login' %}" class="main-btn d-none d-lg-block">
-                                <span>ورود / ثبت نام</span></a>
+                                <span>ورود</span></a>
                         </div>
+                        <div style="margin-right: 10px;" class="nav-right-options d-flex align-items-center">
+                            <a href="{% url 'account:signup' %}" class="main-btn d-none d-lg-block">
+                                <span>ثبت نام</span></a>
+                        </div>
+                        {% endif %}
                     </div>
                 </nav>
             </div>
@@ -61,7 +76,7 @@
     {% block content %}
     {% endblock %}
 
-    
+
     <!-- footer -->
     <hr style="border-width:1.5px; color: #fff;">
     <div class="footer-area pt-100 pb-75">
@@ -92,7 +107,7 @@
                                 <h3>عضویت در خبرنامه</h3>
                                 <form action="{% url 'aapp:newsletter' %}" method="post">\
                                     {% csrf_token %}
-                                    <input name="email" type="email" class="form-control" placeholder="ایمیل" required>
+                                    <input name="email" type="email" style="direction: rtl;" class="form-control" placeholder="ایمیل" required>
                                     <button type="submit" class="main-btn border-btn">
                                         <span> عضویت در خبرنامه </span><i class="fa-solid fa-paper-plane"></i>
                                     </button>

@@ -16,14 +16,17 @@
                         <li><a href="{% url 'account:signup' %}">ثبت نام</a></li>
                     </ul>
                     <h3>وارد حساب کاربری خود شوید</h3>
-                    <form>
+                    <form method="post" action="{% url 'account:login' %}">
+                        {% csrf_token %}
                         <div class="form-group mb-4">
-                            <input type="email" class="form-control" placeholder="ایمیل">
+                            <input name="eu" type="text" style="direction: rtl;" class="form-control"
+                                placeholder="ایمیل یا نام کاربری" required>
                         </div>
                         <div class="form-group mb-4">
                             <div class="password-wrapper">
-                                <input type="password" class="form-control" placeholder="رمز عبور"><i
-                                    class="fa fa-eye-slash password-toggle-icon" aria-hidden="true"></i>
+                                <input name="password" type="password" class="form-control" placeholder="رمز عبور"
+                                    required>
+                                <i class="fa fa-eye-slash password-toggle-icon" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="form-group mb-4">
