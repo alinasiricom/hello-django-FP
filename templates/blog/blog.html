@@ -25,6 +25,7 @@
                     <ul class="ps-0 list-unstyled date">
                         <li><span>{{post.published_date|date:'j/m/Y'}}</span></li>
                         <li>زمان مطالعه: {{post.reading_time}} دقیقه</li>
+                        <li>{{post.counted_views}} بازدید</li>
                     </ul>
                     <h3><a href="{% url 'blog:single' pid=post.id %}">{{post.title}}</a></h3>
                 </div>
