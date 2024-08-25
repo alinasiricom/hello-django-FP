@@ -15,6 +15,10 @@ INSTALLED_APPS = [
     'aapp.apps.AappConfig',
     'blog.apps.BlogConfig',
     'account.apps.AccountConfig',
+
+    "compressor",
+    "cssmin",
+    "jsmin",
 ]
 
 MIDDLEWARE = [
@@ -90,3 +94,11 @@ MEDIA_URL = 'media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
+    'compressor.finders.CompressorFinder',
+)

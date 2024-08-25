@@ -1,4 +1,6 @@
 {% load static %}
+{% load compress %}
+
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl"><!----- Shered In Mellatweb.com --->
@@ -6,6 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% compress css %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
@@ -17,6 +20,7 @@
     <link rel="stylesheet" href="{% static 'css/helvetica-neue.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    {% endcompress %}
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
     <title>Stir</title>
 </head>
@@ -140,6 +144,7 @@
         </div>
     </div>
     <div class="back-to-top text-center"><i class="icofont-simple-up"></i></div>
+    {% compress js %}
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
@@ -151,6 +156,7 @@
     <script src="{% static 'js/mixitup.min.js' %}"></script>
     <script src="{% static 'js/smoothscroll.min.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
+    {% endcompress %}
 </body>
 
 </html>
