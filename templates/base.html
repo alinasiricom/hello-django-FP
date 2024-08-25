@@ -23,6 +23,8 @@
 
 <body class="business-agency-body">
 
+    {% include 'message.html' %}
+
     <!-- Header -->
     <div class="navbar-area style-two bg-color-0c0c1c py-0">
         <div class="main-nav">
@@ -59,9 +61,7 @@
     {% block content %}
     {% endblock %}
 
-    {% include 'message.html' %}
-    {% include 'message1.html' %}
-
+    
     <!-- footer -->
     <hr style="border-width:1.5px; color: #fff;">
     <div class="footer-area pt-100 pb-75">
@@ -90,8 +90,9 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-single-item style-two">
                                 <h3>عضویت در خبرنامه</h3>
-                                <form>
-                                    <input type="email" class="form-control" placeholder="ایمیل">
+                                <form action="{% url 'aapp:newsletter' %}" method="post">\
+                                    {% csrf_token %}
+                                    <input name="email" type="email" class="form-control" placeholder="ایمیل" required>
                                     <button type="submit" class="main-btn border-btn">
                                         <span> عضویت در خبرنامه </span><i class="fa-solid fa-paper-plane"></i>
                                     </button>
