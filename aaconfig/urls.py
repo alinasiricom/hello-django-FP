@@ -8,6 +8,8 @@ urlpatterns = [
     path('', include('aapp.urls')),
     path('blog/', include('blog.urls')),
     path('account/', include('account.urls')),
+
+    path('captcha/', include('captcha.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
