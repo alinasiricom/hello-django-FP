@@ -12,8 +12,12 @@ ALLOWED_HOSTS = ['p2.alinasiri.com', 'www.p2.alinasiri.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'alinasir_fp',
+    'USER':'alinasir_ali',
+    'PASSWORD':'BvGQ]}naicJo',
+    'HOST':'localhost',
+    'PORT':'3306',
     }
 }
 
