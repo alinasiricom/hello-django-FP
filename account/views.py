@@ -52,6 +52,7 @@ def signup_view(request):
                 u = User(email=email, username=username)
                 u.set_password(password1)
                 u.save()
+                messages.add_message(request, messages.SUCCESS, 'حساب شما با موفقیت ایجاد شد.')
                 return redirect('/')
             else:
                 messages.add_message(request, messages.ERROR, 'Password and its repeated password are not same.')

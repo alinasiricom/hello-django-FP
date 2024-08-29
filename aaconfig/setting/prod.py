@@ -3,7 +3,7 @@ from aaconfig.settings import *
 
 SECRET_KEY = 'django-insecure-)3%2)uickechh96kh@%pjv16lp)(7=ay9^!ag3ht*j&h)^*6g6'
 
-DEBUG = True
+DEBUG = False
 
 CSRF_COOKIE_SECURE = True
 
@@ -22,8 +22,8 @@ DATABASES = {
 }
 
 
-STATIC_ROOT = BASE_DIR / 'static'
-MEDIA_ROOT = BASE_DIR / 'media'
+STATIC_ROOT = '/home/alinasir/public_html_p2/static'
+MEDIA_ROOT = '/home/alinasir/public_html_p2/media'
 
 STATICFILES_DIRS = [
     BASE_DIR / "statics",
