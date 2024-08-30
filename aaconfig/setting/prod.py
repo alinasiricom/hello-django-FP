@@ -13,7 +13,7 @@ ALLOWED_HOSTS = ['p2.alinasiri.com', 'www.p2.alinasiri.com']
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'alinasir_fp',
+    'NAME': 'alinasir_p2',
     'USER':'alinasir_ali',
     'PASSWORD':'BvGQ]}naicJo',
     'HOST':'localhost',
